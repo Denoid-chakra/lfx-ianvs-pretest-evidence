@@ -1,0 +1,86 @@
+Task 3 - Mini Docker Sandbox execution transcript
+Host: Ubuntu 24.04.4 LTS VM
+Working directory: /root/lfx-task1/ianvs/task3_sandbox
+
+$ docker --version
+Docker version 29.7.2, build a7dcaa6
+
+$ docker compose version
+Docker Compose version v5.5.0
+
+$ docker run --rm --cpus 1 --memory 128m python:3.10-slim python --version
+Python 3.10.21
+
+$ python3 sandbox_runner.py --help
+usage: sandbox_runner.py [-h] --image IMAGE --command COMMAND
+                         [--cpu-limit CPU_LIMIT] [--memory-limit MEMORY_LIMIT]
+                         [--timeout TIMEOUT]
+
+Run a command inside a Docker container with resource limits.
+
+options:
+  -h, --help            show this help message and exit
+  --image IMAGE         Docker image to run.
+  --command COMMAND     Command string executed inside the container by
+                        /bin/sh -lc.
+  --cpu-limit CPU_LIMIT
+                        Docker CPU limit, passed to docker run --cpus.
+                        Example: 1 or 0.5.
+  --memory-limit MEMORY_LIMIT
+                        Docker memory limit, passed to docker run --memory.
+                        Example: 64m.
+  --timeout TIMEOUT     Maximum wall-clock runtime in seconds.
+
+$ python3 sandbox_runner.py --image python:3.10-slim --command "python -c 'print(\"hello from sandbox\")'" --cpu-limit 1 --memory-limit 256m --timeout 10
+{
+  "command": "python -c 'print(\"hello from sandbox\")'",
+  "container_name": "ianvs-sandbox-88d7a7bbbbd4",
+  "cpu_limit": "1",
+  "error": "",
+  "exit_code": 0,
+  "image": "python:3.10-slim",
+  "memory_limit": "256m",
+  "status": "success",
+  "stderr": "",
+  "stdout": "hello from sandbox\n",
+  "timeout_s": 10.0,
+  "wall_time_s": 0.339
+}
+runner_exit_code=0
+
+$ python3 sandbox_runner.py --image python:3.10-slim --command "python -c 'a=[]; [a.append(bytearray(10*1024*1024)) for _ in range(1000)]'" --cpu-limit 1 --memory-limit 64m --timeout 20
+{
+  "command": "python -c 'a=[]; [a.append(bytearray(10*1024*1024)) for _ in range(1000)]'",
+  "container_name": "ianvs-sandbox-7b8dab1d459d",
+  "cpu_limit": "1",
+  "error": "Container killed due to OOM (exit code 137). Consider increasing memory_limit.",
+  "exit_code": 137,
+  "image": "python:3.10-slim",
+  "memory_limit": "64m",
+  "status": "oom_killed",
+  "stderr": "Killed\n",
+  "stdout": "",
+  "timeout_s": 20.0,
+  "wall_time_s": 0.38
+}
+runner_exit_code=1
+
+$ python3 sandbox_runner.py --image python:3.10-slim --command "python -c 'import time; print(\"sleeping\"); time.sleep(20)'" --cpu-limit 1 --memory-limit 128m --timeout 3
+{
+  "command": "python -c 'import time; print(\"sleeping\"); time.sleep(20)'",
+  "container_name": "ianvs-sandbox-1e6c0b769d53",
+  "cpu_limit": "1",
+  "error": "Container exceeded timeout of 3.0 seconds and was killed.",
+  "exit_code": 137,
+  "image": "python:3.10-slim",
+  "memory_limit": "128m",
+  "status": "timeout",
+  "stderr": "",
+  "stdout": "",
+  "timeout_s": 3.0,
+  "wall_time_s": 3.135
+}
+runner_exit_code=1
+
+$ docker ps -a --filter name=ianvs-sandbox --format "{{.Names}} {{.Status}}"
+
