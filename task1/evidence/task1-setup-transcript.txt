@@ -1,0 +1,962 @@
++ export 'PS4=+ [$(date -Is)] '
++ PS4='+ [$(date -Is)] '
++ [2026-08-28T15:23:09+00:00] date -Is
+2026-08-28T15:23:09+00:00
++ [2026-08-28T15:23:09+00:00] hostname
+no1010042v88whw.corp.adobe.com
++ [2026-08-28T15:23:09+00:00] whoami
+root
++ [2026-08-28T15:23:09+00:00] . /etc/os-release
+++ [2026-08-28T15:23:09+00:00] PRETTY_NAME='Ubuntu 24.04.4 LTS'
+++ [2026-08-28T15:23:09+00:00] NAME=Ubuntu
+++ [2026-08-28T15:23:09+00:00] VERSION_ID=24.04
+++ [2026-08-28T15:23:09+00:00] VERSION='24.04.4 LTS (Noble Numbat)'
+++ [2026-08-28T15:23:09+00:00] VERSION_CODENAME=noble
+++ [2026-08-28T15:23:09+00:00] ID=ubuntu
+++ [2026-08-28T15:23:09+00:00] ID_LIKE=debian
+++ [2026-08-28T15:23:09+00:00] HOME_URL=https://www.ubuntu.com/
+++ [2026-08-28T15:23:09+00:00] SUPPORT_URL=https://help.ubuntu.com/
+++ [2026-08-28T15:23:09+00:00] BUG_REPORT_URL=https://bugs.launchpad.net/ubuntu/
+++ [2026-08-28T15:23:09+00:00] PRIVACY_POLICY_URL=https://www.ubuntu.com/legal/terms-and-policies/privacy-policy
+++ [2026-08-28T15:23:09+00:00] UBUNTU_CODENAME=noble
+++ [2026-08-28T15:23:09+00:00] LOGO=ubuntu-logo
++ [2026-08-28T15:23:09+00:00] printf 'OS=%s\n' 'Ubuntu 24.04.4 LTS'
+OS=Ubuntu 24.04.4 LTS
++ [2026-08-28T15:23:09+00:00] python3 --version
+Python 3.12.3
++ [2026-08-28T15:23:09+00:00] apt-get update
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 https://artifactory.corp.adobe.com/artifactory/deb-salt-broadcom-remote stable InRelease [3,417 B]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1,401 kB]
+Get:7 https://artifactory.corp.adobe.com/artifactory/deb-salt-broadcom-remote stable/main amd64 Packages [165 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/main Translation-en [513 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 Components [464 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 c-n-f Metadata [30.5 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [972 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/universe Translation-en [5,982 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/universe amd64 Components [3,871 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [93.9 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/restricted Translation-en [18.7 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/restricted amd64 c-n-f Metadata [416 B]
+Get:19 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8,328 B]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,230 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [287 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [180 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [17.7 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1,689 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [338 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [388 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [34.9 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1,486 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [339 kB]
+Get:33 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:34 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [456 B]
+Get:35 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [45.4 kB]
+Get:36 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [12.8 kB]
+Get:37 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:38 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [656 B]
+Get:39 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.6 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9,172 B]
+Get:41 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5,776 B]
+Get:42 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:43 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [31.0 kB]
+Get:44 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [18.6 kB]
+Get:45 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [12.6 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1,588 B]
+Get:47 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [206 kB]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [46.4 kB]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [11.9 kB]
+Get:50 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1,203 kB]
+Get:51 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [212 B]
+Get:52 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:53 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [748 B]
+Get:54 http://archive.ubuntu.com/ubuntu noble-backports/multiverse Translation-en [340 B]
+Get:55 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:56 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:57 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [241 kB]
+Get:58 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [76.4 kB]
+Get:59 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [24.2 kB]
+Get:60 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1,392 kB]
+Get:61 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [321 kB]
+Get:62 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:63 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [444 B]
+Get:64 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [40.3 kB]
+Get:65 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [11.1 kB]
+Get:66 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:67 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [468 B]
+Fetched 39.7 MB in 16s (2,449 kB/s)
+Reading package lists...
++ [2026-08-28T15:23:35+00:00] apt-get install -y unzip ca-certificates curl bzip2
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl3t64-gnutls libcurl4t64
+Suggested packages:
+  bzip2-doc zip
+The following NEW packages will be installed:
+  bzip2 unzip
+The following packages will be upgraded:
+  ca-certificates curl libcurl3t64-gnutls libcurl4t64
+4 upgraded, 2 newly installed, 0 to remove and 155 not upgraded.
+Need to get 1,253 kB of archives.
+After this operation, 447 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260601~24.04.1 [139 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.13 [226 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.13 [343 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.13 [335 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 unzip amd64 6.0-28ubuntu4.1 [174 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 1,253 kB in 3s (435 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96467 files and directories currently installed.)
+Preparing to unpack .../0-ca-certificates_20260601~24.04.1_all.deb ...
+Unpacking ca-certificates (20260601~24.04.1) over (20240203) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../1-bzip2_1.0.8-5.1build0.1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5.1build0.1) ...
+Preparing to unpack .../2-curl_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.8) ...
+Preparing to unpack .../3-libcurl4t64_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.8) ...
+Preparing to unpack .../4-libcurl3t64-gnutls_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.8) ...
+Selecting previously unselected package unzip.
+Preparing to unpack .../5-unzip_6.0-28ubuntu4.1_amd64.deb ...
+Unpacking unzip (6.0-28ubuntu4.1) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.13) ...
+Setting up unzip (6.0-28ubuntu4.1) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.13) ...
+Setting up bzip2 (1.0.8-5.1build0.1) ...
+Setting up ca-certificates (20260601~24.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+14 added, 39 removed; done.
+Setting up curl (8.5.0-2ubuntu10.13) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+Processing triggers for ca-certificates (20260601~24.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ systemctl restart packagekit.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
++ [2026-08-28T15:23:57+00:00] mkdir -p /root/lfx-task1/bin /root/lfx-task1/downloads
++ [2026-08-28T15:23:57+00:00] '[' '!' -x /root/lfx-task1/bin/micromamba ']'
++ [2026-08-28T15:23:57+00:00] curl -L https://micro.mamba.pm/api/micromamba/linux-64/latest -o /root/lfx-task1/downloads/micromamba.tar.bz2
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  4079    0  4079    0     0   1925      0 --:--:--  0:00:02 --:--:-- 11857
+  0 6824k    0 16747    0     0   5640      0  0:20:39  0:00:02  0:20:37  5640  3 6824k    3  254k    0     0  64571      0  0:01:48  0:00:04  0:01:44  223k 12 6824k   12  883k    0     0   182k      0  0:00:37  0:00:04  0:00:33  465k100 6824k  100 6824k    0     0  1211k      0  0:00:05  0:00:05 --:--:-- 2556k
++ [2026-08-28T15:24:03+00:00] tar -xjf /root/lfx-task1/downloads/micromamba.tar.bz2 -C /root/lfx-task1 bin/micromamba
++ [2026-08-28T15:24:04+00:00] /root/lfx-task1/bin/micromamba --version
+2.9.0
++ [2026-08-28T15:24:04+00:00] /root/lfx-task1/bin/micromamba create -y -p /root/lfx-task1/ianvs-py37 -c conda-forge python=3.7 pip=23.3 setuptools=59.8 wheel=0.36.2
+Fetch Shard Index for conda-forge/linux-64                                                      ⧖ Starting
+Fetch Shard Index for conda-forge/linux-64                                                ✔ Done (0.2 sec)
+Fetch Shard Index for conda-forge/noarch                                                        ⧖ Starting
+Fetch Shard Index for conda-forge/noarch                                                  ✔ Done (0.1 sec)
+Fetching and Parsing Packages' Shards                                                           ⧖ Starting
+Fetching and Parsing Packages' Shards                                                     ✔ Done (2.0 sec)
+
+Resolving Environment                                                                           ⧖ Starting
+Resolving Environment                                                                     ✔ Done (0.4 sec)
+
+Transaction
+
+  Prefix: /root/lfx-task1/ianvs-py37
+
+  Updating specs:
+
+   - python=3.7
+   - pip=23.3
+   - setuptools=59.8
+   - wheel=0.36.2
+
+
+  Package               Version  Build                 Channel          Size
+──────────────────────────────────────────────────────────────────────────────
+  Install:
+──────────────────────────────────────────────────────────────────────────────
+
+  + _openmp_mutex           4.5  20_gnu                conda-forge      29kB
+  + ca-certificates   2026.7.22  hbd8a1cb_0            conda-forge     132kB
+  + icu                    78.3  py310h44b86e0_2       conda-forge      14MB
+  + ld_impl_linux-64     2.46.1  default_hbd61a6d_102  conda-forge     745kB
+  + libffi                3.4.6  h2dba641_1            conda-forge      57kB
+  + libgcc               16.2.0  ha9f2e26_4            conda-forge       1MB
+  + libgcc-ng            16.2.0  h69a702a_4            conda-forge      28kB
+  + libgomp              16.2.0  he0feb66_4            conda-forge     640kB
+  + liblzma               5.8.3  hb03c661_1            conda-forge     113kB
+  + liblzma-devel         5.8.3  hb03c661_1            conda-forge     492kB
+  + libnsl                2.0.1  hb9d3cd8_1            conda-forge      34kB
+  + libsqlite            3.53.4  h13e7031_1            conda-forge     974kB
+  + libstdcxx            16.2.0  h934c35e_4            conda-forge       7MB
+  + libstdcxx-ng         16.2.0  hdf11a46_4            conda-forge      28kB
+  + libzlib               1.3.2  h25fd6f3_3            conda-forge      64kB
+  + ncurses                 6.6  hdb14827_1            conda-forge     911kB
+  + openssl               3.6.4  h781a0a9_0            conda-forge       3MB
+  + pip                  23.3.2  pyhd8ed1ab_0          conda-forge       1MB
+  + python               3.7.12  hf930737_100_cpython  conda-forge      60MB
+  + python_abi              3.7  4_cp37m               conda-forge       6kB
+  + readline                8.3  hd6e31c0_1            conda-forge     349kB
+  + setuptools           59.8.0  py37h89c1867_1        conda-forge       1MB
+  + sqlite               3.53.4  h9ffa6c4_1            conda-forge     206kB
+  + tk                   8.6.13  noxft_h1df4ec4_4      conda-forge       4MB
+  + wheel                0.36.2  pyhd3deb0d_0          conda-forge      31kB
+  + xz                    5.8.3  ha02ee65_1            conda-forge      24kB
+  + xz-gpl-tools          5.8.3  ha02ee65_1            conda-forge      40kB
+  + xz-tools              5.8.3  hb03c661_1            conda-forge      96kB
+  + zstd                  1.5.7  hb78ec9c_7            conda-forge     601kB
+
+  Summary:
+
+  Install: 29 packages
+
+  Total download: 97MB
+
+──────────────────────────────────────────────────────────────────────────────
+
+
+warning  libmamba Security Warning: This transaction includes executing package scripts (pre/post-link/unlink) if present. These scripts can contain arbitrary code. Please ensure you trust the package sources.
+
+Transaction starting
+Linking libzlib-1.3.2-h25fd6f3_3
+Linking libgomp-16.2.0-he0feb66_4
+Linking python_abi-3.7-4_cp37m
+Linking zstd-1.5.7-hb78ec9c_7
+Linking _openmp_mutex-4.5-20_gnu
+Linking ld_impl_linux-64-2.46.1-default_hbd61a6d_102
+Linking libgcc-16.2.0-ha9f2e26_4
+Linking libnsl-2.0.1-hb9d3cd8_1
+Linking libffi-3.4.6-h2dba641_1
+Linking liblzma-5.8.3-hb03c661_1
+Linking ncurses-6.6-hdb14827_1
+Linking tk-8.6.13-noxft_h1df4ec4_4
+Linking libgcc-ng-16.2.0-h69a702a_4
+Linking libstdcxx-16.2.0-h934c35e_4
+Linking liblzma-devel-5.8.3-hb03c661_1
+Linking xz-tools-5.8.3-hb03c661_1
+Linking xz-gpl-tools-5.8.3-ha02ee65_1
+Linking readline-8.3-hd6e31c0_1
+Linking icu-78.3-py310h44b86e0_2
+Linking libstdcxx-ng-16.2.0-hdf11a46_4
+Linking xz-5.8.3-ha02ee65_1
+Linking libsqlite-3.53.4-h13e7031_1
+Linking sqlite-3.53.4-h9ffa6c4_1
+Linking ca-certificates-2026.7.22-hbd8a1cb_0
+Linking openssl-3.6.4-h781a0a9_0
+Linking wheel-0.36.2-pyhd3deb0d_0
+Linking python-3.7.12-hf930737_100_cpython
+Linking pip-23.3.2-pyhd8ed1ab_0
+Linking setuptools-59.8.0-py37h89c1867_1
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    micromamba activate /root/lfx-task1/ianvs-py37
+
+Or to execute a single command in this environment, use:
+
+    micromamba run -p /root/lfx-task1/ianvs-py37 mycommand
+
++ [2026-08-28T15:24:16+00:00] /root/lfx-task1/ianvs-py37/bin/python --version
+Python 3.7.12
++ [2026-08-28T15:24:16+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip $'--version\r'
+
+Usage:   
+  /root/lfx-task1/ianvs-py37/bin/python -m pip <command> [options]
+
+no such option: --version
++ export 'PS4=+ [$(date -Is)] '
++ PS4='+ [$(date -Is)] '
++ [2026-08-28T15:24:49+00:00] date -Is
+2026-08-28T15:24:49+00:00
++ [2026-08-28T15:24:49+00:00] /root/lfx-task1/ianvs-py37/bin/python --version
+Python 3.7.12
++ [2026-08-28T15:24:49+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip --version
+pip 23.3.2 from /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/pip (python 3.7)
++ [2026-08-28T15:24:49+00:00] '[' '!' -d /root/lfx-task1/ianvs/.git ']'
++ [2026-08-28T15:24:49+00:00] git clone https://github.com/kubeedge/ianvs.git /root/lfx-task1/ianvs
+Cloning into '/root/lfx-task1/ianvs'...
+Updating files:  24% (341/1387)Updating files:  25% (347/1387)Updating files:  26% (361/1387)Updating files:  27% (375/1387)Updating files:  28% (389/1387)Updating files:  29% (403/1387)Updating files:  30% (417/1387)Updating files:  31% (430/1387)Updating files:  32% (444/1387)Updating files:  33% (458/1387)Updating files:  34% (472/1387)Updating files:  35% (486/1387)Updating files:  36% (500/1387)Updating files:  37% (514/1387)Updating files:  38% (528/1387)Updating files:  39% (541/1387)Updating files:  40% (555/1387)Updating files:  41% (569/1387)Updating files:  42% (583/1387)Updating files:  43% (597/1387)Updating files:  44% (611/1387)Updating files:  45% (625/1387)Updating files:  46% (639/1387)Updating files:  47% (652/1387)Updating files:  48% (666/1387)Updating files:  49% (680/1387)Updating files:  50% (694/1387)Updating files:  51% (708/1387)Updating files:  52% (722/1387)Updating files:  53% (736/1387)Updating files:  54% (749/1387)Updating files:  55% (763/1387)Updating files:  56% (777/1387)Updating files:  57% (791/1387)Updating files:  58% (805/1387)Updating files:  59% (819/1387)Updating files:  60% (833/1387)Updating files:  61% (847/1387)Updating files:  62% (860/1387)Updating files:  63% (874/1387)Updating files:  64% (888/1387)Updating files:  65% (902/1387)Updating files:  66% (916/1387)Updating files:  67% (930/1387)Updating files:  68% (944/1387)Updating files:  69% (958/1387)Updating files:  70% (971/1387)Updating files:  71% (985/1387)Updating files:  72% (999/1387)Updating files:  73% (1013/1387)Updating files:  74% (1027/1387)Updating files:  75% (1041/1387)Updating files:  76% (1055/1387)Updating files:  77% (1068/1387)Updating files:  78% (1082/1387)Updating files:  79% (1096/1387)Updating files:  80% (1110/1387)Updating files:  81% (1124/1387)Updating files:  82% (1138/1387)Updating files:  83% (1152/1387)Updating files:  84% (1166/1387)Updating files:  85% (1179/1387)Updating files:  86% (1193/1387)Updating files:  87% (1207/1387)Updating files:  88% (1221/1387)Updating files:  89% (1235/1387)Updating files:  90% (1249/1387)Updating files:  91% (1263/1387)Updating files:  92% (1277/1387)Updating files:  93% (1290/1387)Updating files:  94% (1304/1387)Updating files:  95% (1318/1387)Updating files:  96% (1332/1387)Updating files:  97% (1346/1387)Updating files:  98% (1360/1387)Updating files:  99% (1374/1387)Updating files: 100% (1387/1387)Updating files: 100% (1387/1387), done.
++ [2026-08-28T15:25:02+00:00] cd /root/lfx-task1/ianvs
++ [2026-08-28T15:25:02+00:00] git rev-parse HEAD
+95016dbf7699fac09a877c108133cb38f515119b
++ [2026-08-28T15:25:02+00:00] git status --short
++ [2026-08-28T15:25:02+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir --upgrade pip==23.3.2 setuptools==59.8.0 wheel==0.36.2
+Requirement already satisfied: pip==23.3.2 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (23.3.2)
+Requirement already satisfied: setuptools==59.8.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (59.8.0)
+Requirement already satisfied: wheel==0.36.2 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (0.36.2)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:25:03+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir -r requirements.txt
+Collecting prettytable~=2.5.0 (from -r requirements.txt (line 1))
+  Downloading prettytable-2.5.0-py3-none-any.whl.metadata (22 kB)
+Collecting scikit-learn (from -r requirements.txt (line 2))
+  Downloading scikit_learn-1.0.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Collecting numpy (from -r requirements.txt (line 3))
+  Downloading numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (2.1 kB)
+Collecting pandas (from -r requirements.txt (line 4))
+  Downloading pandas-1.3.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (12 kB)
+Collecting tqdm (from -r requirements.txt (line 5))
+  Downloading tqdm-4.68.2-py3-none-any.whl.metadata (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.7/58.7 kB 36.7 MB/s eta 0:00:00
+Collecting matplotlib (from -r requirements.txt (line 6))
+  Downloading matplotlib-3.5.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl.metadata (6.7 kB)
+Collecting onnx (from -r requirements.txt (line 7))
+  Downloading onnx-1.14.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (15 kB)
+Collecting wcwidth (from prettytable~=2.5.0->-r requirements.txt (line 1))
+  Downloading wcwidth-0.2.14-py2.py3-none-any.whl.metadata (15 kB)
+Collecting importlib-metadata (from prettytable~=2.5.0->-r requirements.txt (line 1))
+  Downloading importlib_metadata-6.7.0-py3-none-any.whl.metadata (4.9 kB)
+Collecting scipy>=1.1.0 (from scikit-learn->-r requirements.txt (line 2))
+  Downloading scipy-1.7.3-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (2.2 kB)
+Collecting joblib>=0.11 (from scikit-learn->-r requirements.txt (line 2))
+  Downloading joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn->-r requirements.txt (line 2))
+  Downloading threadpoolctl-3.1.0-py3-none-any.whl.metadata (9.2 kB)
+Collecting python-dateutil>=2.7.3 (from pandas->-r requirements.txt (line 4))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2017.3 (from pandas->-r requirements.txt (line 4))
+  Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 6))
+  Downloading cycler-0.11.0-py3-none-any.whl.metadata (785 bytes)
+Collecting fonttools>=4.22.0 (from matplotlib->-r requirements.txt (line 6))
+  Downloading fonttools-4.38.0-py3-none-any.whl.metadata (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.5/138.5 kB 42.3 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1 (from matplotlib->-r requirements.txt (line 6))
+  Downloading kiwisolver-1.4.5-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl.metadata (6.4 kB)
+Collecting packaging>=20.0 (from matplotlib->-r requirements.txt (line 6))
+  Downloading packaging-24.0-py3-none-any.whl.metadata (3.2 kB)
+Collecting pillow>=6.2.0 (from matplotlib->-r requirements.txt (line 6))
+  Downloading Pillow-9.5.0-cp37-cp37m-manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting pyparsing>=2.2.1 (from matplotlib->-r requirements.txt (line 6))
+  Downloading pyparsing-3.1.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting protobuf>=3.20.2 (from onnx->-r requirements.txt (line 7))
+  Downloading protobuf-4.24.4-cp37-abi3-manylinux2014_x86_64.whl.metadata (540 bytes)
+Collecting typing-extensions>=3.6.2.1 (from onnx->-r requirements.txt (line 7))
+  Downloading typing_extensions-4.7.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7.3->pandas->-r requirements.txt (line 4))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting zipp>=0.5 (from importlib-metadata->prettytable~=2.5.0->-r requirements.txt (line 1))
+  Downloading zipp-3.15.0-py3-none-any.whl.metadata (3.7 kB)
+Downloading prettytable-2.5.0-py3-none-any.whl (24 kB)
+Downloading scikit_learn-1.0.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.8/24.8 MB 341.2 MB/s eta 0:00:00
+Downloading numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 363.2 MB/s eta 0:00:00
+Downloading pandas-1.3.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 378.9 MB/s eta 0:00:00
+Downloading tqdm-4.68.2-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 kB 281.7 MB/s eta 0:00:00
+Downloading matplotlib-3.5.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (11.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.2/11.2 MB 361.7 MB/s eta 0:00:00
+Downloading onnx-1.14.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.6/14.6 MB 10.3 MB/s eta 0:00:00
+Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Downloading fonttools-4.38.0-py3-none-any.whl (965 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 965.4/965.4 kB 381.7 MB/s eta 0:00:00
+Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 kB 364.5 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.5-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 364.9 MB/s eta 0:00:00
+Downloading packaging-24.0-py3-none-any.whl (53 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 228.0 MB/s eta 0:00:00
+Downloading Pillow-9.5.0-cp37-cp37m-manylinux_2_28_x86_64.whl (3.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 333.5 MB/s eta 0:00:00
+Downloading protobuf-4.24.4-cp37-abi3-manylinux2014_x86_64.whl (311 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 311.6/311.6 kB 370.9 MB/s eta 0:00:00
+Downloading pyparsing-3.1.4-py3-none-any.whl (104 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.1/104.1 kB 328.9 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 367.4 MB/s eta 0:00:00
+Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 508.3/508.3 kB 381.6 MB/s eta 0:00:00
+Downloading scipy-1.7.3-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (38.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.1/38.1 MB 360.7 MB/s eta 0:00:00
+Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Downloading importlib_metadata-6.7.0-py3-none-any.whl (22 kB)
+Downloading wcwidth-0.2.14-py2.py3-none-any.whl (37 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Installing collected packages: pytz, zipp, wcwidth, typing-extensions, threadpoolctl, six, pyparsing, protobuf, pillow, packaging, numpy, joblib, fonttools, cycler, scipy, python-dateutil, onnx, kiwisolver, importlib-metadata, tqdm, scikit-learn, prettytable, pandas, matplotlib
+Successfully installed cycler-0.11.0 fonttools-4.38.0 importlib-metadata-6.7.0 joblib-1.3.2 kiwisolver-1.4.5 matplotlib-3.5.3 numpy-1.21.6 onnx-1.14.1 packaging-24.0 pandas-1.3.5 pillow-9.5.0 prettytable-2.5.0 protobuf-4.24.4 pyparsing-3.1.4 python-dateutil-2.9.0.post0 pytz-2026.3.post1 scikit-learn-1.0.2 scipy-1.7.3 six-1.17.0 threadpoolctl-3.1.0 tqdm-4.68.2 typing-extensions-4.7.1 wcwidth-0.2.14 zipp-3.15.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:25:24+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir -r examples/pcb-aoi/requirements.txt
+Collecting opencv-python~=3.4 (from -r examples/pcb-aoi/requirements.txt (line 1))
+  Downloading opencv_python-3.4.18.65-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting onnx==1.9.0 (from -r examples/pcb-aoi/requirements.txt (line 2))
+  Downloading onnx-1.9.0-cp37-cp37m-manylinux2010_x86_64.whl.metadata (10 kB)
+Requirement already satisfied: protobuf in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from onnx==1.9.0->-r examples/pcb-aoi/requirements.txt (line 2)) (4.24.4)
+Requirement already satisfied: numpy>=1.16.6 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from onnx==1.9.0->-r examples/pcb-aoi/requirements.txt (line 2)) (1.21.6)
+Requirement already satisfied: six in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from onnx==1.9.0->-r examples/pcb-aoi/requirements.txt (line 2)) (1.17.0)
+Requirement already satisfied: typing-extensions>=3.6.2.1 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from onnx==1.9.0->-r examples/pcb-aoi/requirements.txt (line 2)) (4.7.1)
+Downloading onnx-1.9.0-cp37-cp37m-manylinux2010_x86_64.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 9.0 MB/s eta 0:00:00
+Downloading opencv_python-3.4.18.65-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (58.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.4/58.4 MB 11.1 MB/s eta 0:00:00
+Installing collected packages: opencv-python, onnx
+  Attempting uninstall: onnx
+    Found existing installation: onnx 1.14.1
+    Uninstalling onnx-1.14.1:
+      Successfully uninstalled onnx-1.14.1
+Successfully installed onnx-1.9.0 opencv-python-3.4.18.65
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:25:44+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir ./resources/third_party/sedna-0.6.0.1-py3-none-any.whl
+Processing ./resources/third_party/sedna-0.6.0.1-py3-none-any.whl
+Requirement already satisfied: numpy>=1.13.3 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from sedna==0.6.0.1) (1.21.6)
+Collecting colorlog>=4.7.2 (from sedna==0.6.0.1)
+  Downloading colorlog-6.12.0-py3-none-any.whl.metadata (11 kB)
+Collecting websockets>=9.1 (from sedna==0.6.0.1)
+  Downloading websockets-11.0.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting requests>=2.24.0 (from sedna==0.6.0.1)
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting PyYAML (from sedna==0.6.0.1)
+  Downloading PyYAML-6.0.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Requirement already satisfied: setuptools>=54.2.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from sedna==0.6.0.1) (59.8.0)
+Collecting fastapi>=0.68.1 (from sedna==0.6.0.1)
+  Downloading fastapi-0.103.2-py3-none-any.whl.metadata (24 kB)
+Collecting pydantic>=1.8.1 (from sedna==0.6.0.1)
+  Downloading pydantic-2.5.3-py3-none-any.whl.metadata (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.6/65.6 kB 36.7 MB/s eta 0:00:00
+Collecting tenacity>=8.0.1 (from sedna==0.6.0.1)
+  Downloading tenacity-8.2.3-py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: joblib in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from sedna==0.6.0.1) (1.3.2)
+Requirement already satisfied: pandas in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from sedna==0.6.0.1) (1.3.5)
+Requirement already satisfied: six>=1.15.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from sedna==0.6.0.1) (1.17.0)
+Collecting minio>=7.0.3 (from sedna==0.6.0.1)
+  Downloading minio-7.2.7-py3-none-any.whl.metadata (6.4 kB)
+Collecting uvicorn>=0.14.0 (from sedna==0.6.0.1)
+  Downloading uvicorn-0.22.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting pycocotools (from sedna==0.6.0.1)
+  Downloading pycocotools-2.0.7-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.1 kB)
+Collecting watchdog (from sedna==0.6.0.1)
+  Downloading watchdog-3.0.0-py3-none-manylinux2014_x86_64.whl.metadata (36 kB)
+Collecting anyio<4.0.0,>=3.7.1 (from fastapi>=0.68.1->sedna==0.6.0.1)
+  Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting starlette<0.28.0,>=0.27.0 (from fastapi>=0.68.1->sedna==0.6.0.1)
+  Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: typing-extensions>=4.5.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from fastapi>=0.68.1->sedna==0.6.0.1) (4.7.1)
+Collecting certifi (from minio>=7.0.3->sedna==0.6.0.1)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting urllib3 (from minio>=7.0.3->sedna==0.6.0.1)
+  Downloading urllib3-2.0.7-py3-none-any.whl.metadata (6.6 kB)
+Collecting argon2-cffi (from minio>=7.0.3->sedna==0.6.0.1)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio>=7.0.3->sedna==0.6.0.1)
+  Downloading pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Collecting annotated-types>=0.4.0 (from pydantic>=1.8.1->sedna==0.6.0.1)
+  Downloading annotated_types-0.5.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: importlib-metadata in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from pydantic>=1.8.1->sedna==0.6.0.1) (6.7.0)
+Collecting pydantic-core==2.14.6 (from pydantic>=1.8.1->sedna==0.6.0.1)
+  Downloading pydantic_core-2.14.6-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Collecting charset-normalizer<4,>=2 (from requests>=2.24.0->sedna==0.6.0.1)
+  Downloading charset_normalizer-3.5.1-cp37-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.9/45.9 kB 191.0 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests>=2.24.0->sedna==0.6.0.1)
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting click>=7.0 (from uvicorn>=0.14.0->sedna==0.6.0.1)
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting h11>=0.8 (from uvicorn>=0.14.0->sedna==0.6.0.1)
+  Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Requirement already satisfied: python-dateutil>=2.7.3 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from pandas->sedna==0.6.0.1) (2.9.0.post0)
+Requirement already satisfied: pytz>=2017.3 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from pandas->sedna==0.6.0.1) (2026.3.post1)
+Requirement already satisfied: matplotlib>=2.1.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from pycocotools->sedna==0.6.0.1) (3.5.3)
+Collecting sniffio>=1.1 (from anyio<4.0.0,>=3.7.1->fastapi>=0.68.1->sedna==0.6.0.1)
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting exceptiongroup (from anyio<4.0.0,>=3.7.1->fastapi>=0.68.1->sedna==0.6.0.1)
+  Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+Requirement already satisfied: cycler>=0.10 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib>=2.1.0->pycocotools->sedna==0.6.0.1) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib>=2.1.0->pycocotools->sedna==0.6.0.1) (4.38.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib>=2.1.0->pycocotools->sedna==0.6.0.1) (1.4.5)
+Requirement already satisfied: packaging>=20.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib>=2.1.0->pycocotools->sedna==0.6.0.1) (24.0)
+Requirement already satisfied: pillow>=6.2.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib>=2.1.0->pycocotools->sedna==0.6.0.1) (9.5.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib>=2.1.0->pycocotools->sedna==0.6.0.1) (3.1.4)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio>=7.0.3->sedna==0.6.0.1)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Requirement already satisfied: zipp>=0.5 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from importlib-metadata->pydantic>=1.8.1->sedna==0.6.0.1) (3.15.0)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio>=7.0.3->sedna==0.6.0.1)
+  Downloading cffi-1.15.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.1 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio>=7.0.3->sedna==0.6.0.1)
+  Downloading pycparser-2.21-py2.py3-none-any.whl.metadata (1.1 kB)
+Downloading colorlog-6.12.0-py3-none-any.whl (12 kB)
+Downloading fastapi-0.103.2-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.3/66.3 kB 275.9 MB/s eta 0:00:00
+Downloading minio-7.2.7-py3-none-any.whl (93 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.5/93.5 kB 253.6 MB/s eta 0:00:00
+Downloading pydantic-2.5.3-py3-none-any.whl (381 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.9/381.9 kB 301.7 MB/s eta 0:00:00
+Downloading pydantic_core-2.14.6-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 324.1 MB/s eta 0:00:00
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 297.3 MB/s eta 0:00:00
+Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+Downloading uvicorn-0.22.0-py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 265.1 MB/s eta 0:00:00
+Downloading websockets-11.0.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (129 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.9/129.9 kB 291.9 MB/s eta 0:00:00
+Downloading pycocotools-2.0.7-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (403 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 403.3/403.3 kB 385.5 MB/s eta 0:00:00
+Downloading PyYAML-6.0.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (670 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 670.1/670.1 kB 435.0 MB/s eta 0:00:00
+Downloading watchdog-3.0.0-py3-none-manylinux2014_x86_64.whl (82 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 kB 326.5 MB/s eta 0:00:00
+Downloading annotated_types-0.5.0-py3-none-any.whl (11 kB)
+Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 342.9 MB/s eta 0:00:00
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 kB 342.7 MB/s eta 0:00:00
+Downloading charset_normalizer-3.5.1-cp37-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (253 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.1/253.1 kB 380.7 MB/s eta 0:00:00
+Downloading click-8.1.8-py3-none-any.whl (98 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.2/98.2 kB 333.0 MB/s eta 0:00:00
+Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 296.6 MB/s eta 0:00:00
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 315.4 MB/s eta 0:00:00
+Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 311.9 MB/s eta 0:00:00
+Downloading urllib3-2.0.7-py3-none-any.whl (124 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 kB 368.4 MB/s eta 0:00:00
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 429.3 MB/s eta 0:00:00
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (86 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 299.4 MB/s eta 0:00:00
+Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Downloading cffi-1.15.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (427 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.9/427.9 kB 432.9 MB/s eta 0:00:00
+Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 369.2 MB/s eta 0:00:00
+Installing collected packages: websockets, watchdog, urllib3, tenacity, sniffio, PyYAML, pydantic-core, pycryptodome, pycparser, idna, h11, exceptiongroup, colorlog, charset-normalizer, certifi, annotated-types, requests, pydantic, click, cffi, anyio, uvicorn, starlette, pycocotools, argon2-cffi-bindings, fastapi, argon2-cffi, minio, sedna
+Successfully installed PyYAML-6.0.1 annotated-types-0.5.0 anyio-3.7.1 argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2026.7.22 cffi-1.15.1 charset-normalizer-3.5.1 click-8.1.8 colorlog-6.12.0 exceptiongroup-1.3.1 fastapi-0.103.2 h11-0.14.0 idna-3.10 minio-7.2.7 pycocotools-2.0.7 pycparser-2.21 pycryptodome-3.23.0 pydantic-2.5.3 pydantic-core-2.14.6 requests-2.31.0 sedna-0.6.0.1 sniffio-1.3.1 starlette-0.27.0 tenacity-8.2.3 urllib3-2.0.7 uvicorn-0.22.0 watchdog-3.0.0 websockets-11.0.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:25:51+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir colorlog PyYAML
+Requirement already satisfied: colorlog in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (6.12.0)
+Requirement already satisfied: PyYAML in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (6.0.1)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:25:52+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir -e .
+Obtaining file:///root/lfx-task1/ianvs
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Installing collected packages: ianvs
+  Running setup.py develop for ianvs
+Successfully installed ianvs-0.3.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:25:54+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir tensorflow==1.14.0 protobuf==3.20.3 matplotlib==3.3.4 Pillow==8.1.1 tqdm==4.62.3 zipp==3.6.0 libs==0.0.10
+Collecting tensorflow==1.14.0
+  Downloading tensorflow-1.14.0-cp37-cp37m-manylinux1_x86_64.whl.metadata (2.4 kB)
+Collecting protobuf==3.20.3
+  Downloading protobuf-3.20.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl.metadata (679 bytes)
+Collecting matplotlib==3.3.4
+  Downloading matplotlib-3.3.4-cp37-cp37m-manylinux1_x86_64.whl.metadata (5.7 kB)
+Collecting Pillow==8.1.1
+  Downloading Pillow-8.1.1-cp37-cp37m-manylinux1_x86_64.whl.metadata (7.1 kB)
+Collecting tqdm==4.62.3
+  Downloading tqdm-4.62.3-py2.py3-none-any.whl.metadata (56 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.0/57.0 kB 30.2 MB/s eta 0:00:00
+Collecting zipp==3.6.0
+  Downloading zipp-3.6.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting libs==0.0.10
+  Downloading libs-0.0.10-py3-none-any.whl.metadata (831 bytes)
+Collecting absl-py>=0.7.0 (from tensorflow==1.14.0)
+  Downloading absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting astor>=0.6.0 (from tensorflow==1.14.0)
+  Downloading astor-0.8.1-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting gast>=0.2.0 (from tensorflow==1.14.0)
+  Downloading gast-0.7.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting google-pasta>=0.1.6 (from tensorflow==1.14.0)
+  Downloading google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+Collecting keras-applications>=1.0.6 (from tensorflow==1.14.0)
+  Downloading Keras_Applications-1.0.8-py3-none-any.whl.metadata (1.7 kB)
+Collecting keras-preprocessing>=1.0.5 (from tensorflow==1.14.0)
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl.metadata (1.9 kB)
+Requirement already satisfied: numpy<2.0,>=1.14.5 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from tensorflow==1.14.0) (1.21.6)
+Requirement already satisfied: six>=1.10.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from tensorflow==1.14.0) (1.17.0)
+Collecting tensorboard<1.15.0,>=1.14.0 (from tensorflow==1.14.0)
+  Downloading tensorboard-1.14.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting tensorflow-estimator<1.15.0rc0,>=1.14.0rc0 (from tensorflow==1.14.0)
+  Downloading tensorflow_estimator-1.14.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting termcolor>=1.1.0 (from tensorflow==1.14.0)
+  Downloading termcolor-2.3.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting wrapt>=1.11.1 (from tensorflow==1.14.0)
+  Downloading wrapt-1.16.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting grpcio>=1.8.6 (from tensorflow==1.14.0)
+  Downloading grpcio-1.62.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Requirement already satisfied: wheel>=0.26 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from tensorflow==1.14.0) (0.36.2)
+Requirement already satisfied: cycler>=0.10 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib==3.3.4) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib==3.3.4) (1.4.5)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib==3.3.4) (3.1.4)
+Requirement already satisfied: python-dateutil>=2.1 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from matplotlib==3.3.4) (2.9.0.post0)
+Collecting h5py (from keras-applications>=1.0.6->tensorflow==1.14.0)
+  Downloading h5py-3.8.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+Requirement already satisfied: typing-extensions in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from kiwisolver>=1.0.1->matplotlib==3.3.4) (4.7.1)
+Collecting markdown>=2.6.8 (from tensorboard<1.15.0,>=1.14.0->tensorflow==1.14.0)
+  Downloading Markdown-3.4.4-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: setuptools>=41.0.0 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from tensorboard<1.15.0,>=1.14.0->tensorflow==1.14.0) (59.8.0)
+Collecting werkzeug>=0.11.15 (from tensorboard<1.15.0,>=1.14.0->tensorflow==1.14.0)
+  Downloading Werkzeug-2.2.3-py3-none-any.whl.metadata (4.4 kB)
+Requirement already satisfied: importlib-metadata>=4.4 in /root/lfx-task1/ianvs-py37/lib/python3.7/site-packages (from markdown>=2.6.8->tensorboard<1.15.0,>=1.14.0->tensorflow==1.14.0) (6.7.0)
+Collecting MarkupSafe>=2.1.1 (from werkzeug>=0.11.15->tensorboard<1.15.0,>=1.14.0->tensorflow==1.14.0)
+  Downloading MarkupSafe-2.1.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Downloading tensorflow-1.14.0-cp37-cp37m-manylinux1_x86_64.whl (109.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.3/109.3 MB 10.4 MB/s eta 0:00:00
+Downloading protobuf-3.20.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 296.5 MB/s eta 0:00:00
+Downloading matplotlib-3.3.4-cp37-cp37m-manylinux1_x86_64.whl (11.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.5/11.5 MB 275.0 MB/s eta 0:00:00
+Downloading Pillow-8.1.1-cp37-cp37m-manylinux1_x86_64.whl (2.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 3.4 MB/s eta 0:00:00
+Downloading tqdm-4.62.3-py2.py3-none-any.whl (76 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.2/76.2 kB 146.9 MB/s eta 0:00:00
+Downloading zipp-3.6.0-py3-none-any.whl (5.3 kB)
+Downloading libs-0.0.10-py3-none-any.whl (5.8 kB)
+Downloading absl_py-2.1.0-py3-none-any.whl (133 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.7/133.7 kB 297.4 MB/s eta 0:00:00
+Downloading astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Downloading gast-0.7.0-py3-none-any.whl (22 kB)
+Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 255.4 MB/s eta 0:00:00
+Downloading grpcio-1.62.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 318.4 MB/s eta 0:00:00
+Downloading Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.7/50.7 kB 254.7 MB/s eta 0:00:00
+Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.6/42.6 kB 208.7 MB/s eta 0:00:00
+Downloading tensorboard-1.14.0-py3-none-any.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 349.3 MB/s eta 0:00:00
+Downloading tensorflow_estimator-1.14.0-py2.py3-none-any.whl (488 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 488.5/488.5 kB 285.7 MB/s eta 0:00:00
+Downloading termcolor-2.3.0-py3-none-any.whl (6.9 kB)
+Downloading wrapt-1.16.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (77 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.5/77.5 kB 298.0 MB/s eta 0:00:00
+Downloading Markdown-3.4.4-py3-none-any.whl (94 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.2/94.2 kB 72.5 MB/s eta 0:00:00
+Downloading Werkzeug-2.2.3-py3-none-any.whl (233 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.6/233.6 kB 380.0 MB/s eta 0:00:00
+Downloading h5py-3.8.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 360.3 MB/s eta 0:00:00
+Downloading MarkupSafe-2.1.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Installing collected packages: tensorflow-estimator, libs, zipp, wrapt, tqdm, termcolor, protobuf, Pillow, MarkupSafe, keras-preprocessing, h5py, grpcio, google-pasta, gast, astor, absl-py, werkzeug, matplotlib, keras-applications, markdown, tensorboard, tensorflow
+  Attempting uninstall: zipp
+    Found existing installation: zipp 3.15.0
+    Uninstalling zipp-3.15.0:
+      Successfully uninstalled zipp-3.15.0
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.68.2
+    Uninstalling tqdm-4.68.2:
+      Successfully uninstalled tqdm-4.68.2
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.24.4
+    Uninstalling protobuf-4.24.4:
+      Successfully uninstalled protobuf-4.24.4
+  Attempting uninstall: Pillow
+    Found existing installation: Pillow 9.5.0
+    Uninstalling Pillow-9.5.0:
+      Successfully uninstalled Pillow-9.5.0
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.5.3
+    Uninstalling matplotlib-3.5.3:
+      Successfully uninstalled matplotlib-3.5.3
+Successfully installed MarkupSafe-2.1.5 Pillow-8.1.1 absl-py-2.1.0 astor-0.8.1 gast-0.7.0 google-pasta-0.2.0 grpcio-1.62.3 h5py-3.8.0 keras-applications-1.0.8 keras-preprocessing-1.1.2 libs-0.0.10 markdown-3.4.4 matplotlib-3.3.4 protobuf-3.20.3 tensorboard-1.14.0 tensorflow-1.14.0 tensorflow-estimator-1.14.0 termcolor-2.3.0 tqdm-4.62.3 werkzeug-2.2.3 wrapt-1.16.0 zipp-3.6.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:26:31+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir --ignore-requires-python dataclasses==0.8
+Collecting dataclasses==0.8
+  Downloading dataclasses-0.8-py3-none-any.whl.metadata (3.3 kB)
+Downloading dataclasses-0.8-py3-none-any.whl (19 kB)
+Installing collected packages: dataclasses
+Successfully installed dataclasses-0.8
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:26:32+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip install --no-cache-dir --no-deps ./resources/algorithms/FPN_TensorFlow-0.1-py3-none-any.whl
+Processing ./resources/algorithms/FPN_TensorFlow-0.1-py3-none-any.whl
+Installing collected packages: FPN-TensorFlow
+Successfully installed FPN-TensorFlow-0.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ [2026-08-28T15:26:33+00:00] /root/lfx-task1/ianvs-py37/bin/python -m pip check
+No broken requirements found.
++ [2026-08-28T15:26:34+00:00] /root/lfx-task1/ianvs-py37/bin/ianvs $'--help\r'
+usage: ianvs [-h] [-f [BENCHMARKING_CONFIG_FILE]] [-v]
+ianvs: error: unrecognized arguments: --help
++ cd /root/lfx-task1/ianvs
++ /root/lfx-task1/ianvs-py37/bin/ianvs --help
+usage: ianvs [-h] [-f [BENCHMARKING_CONFIG_FILE]] [-v]
+
+AI Benchmarking Tool
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f [BENCHMARKING_CONFIG_FILE], --benchmarking_config_file [BENCHMARKING_CONFIG_FILE]
+                        run a benchmarking job, and the benchmarking config
+                        file must be yaml/yml file.
+  -v, --version         show program version info and exit.
++ /root/lfx-task1/ianvs-py37/bin/python -
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+tensorflow 1.14.0
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/cv2/__init__.py", line 114, in <module>
+    bootstrap()
+  File "/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/cv2/__init__.py", line 102, in bootstrap
+    import cv2
+ImportError: libGL.so.1: cannot open shared object file: No such file or directory
++ export DEBIAN_FRONTEND=noninteractive
++ DEBIAN_FRONTEND=noninteractive
++ apt-get install -y libgl1 libglib2.0-0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.8).
+libglib2.0-0t64 set to manually installed.
+The following additional packages will be installed:
+  libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm2 libgbm1 libgl1-mesa-dri
+  libglvnd0 libglx-mesa0 libglx0 libllvm20 libpciaccess0 libvulkan1
+  libwayland-client0 libx11-xcb1 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-randr0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxshmfence1
+  libxxf86vm1 mesa-libgallium mesa-vulkan-drivers
+The following NEW packages will be installed:
+  libdrm-amdgpu1 libdrm-intel1 libgbm1 libgl1 libgl1-mesa-dri libglvnd0
+  libglx-mesa0 libglx0 libllvm20 libpciaccess0 libvulkan1 libwayland-client0
+  libx11-xcb1 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0
+  libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxshmfence1 libxxf86vm1
+  mesa-libgallium mesa-vulkan-drivers
+The following packages will be upgraded:
+  libdrm-common libdrm2
+2 upgraded, 24 newly installed, 0 to remove and 153 not upgraded.
+Need to get 59.7 MB of archives.
+After this operation, 290 MB of additional disk space will be used.
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-common all 2.4.125-1ubuntu0.1~24.04.2
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm2 amd64 2.4.125-1ubuntu0.1~24.04.2 [41.4 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-amdgpu1 amd64 2.4.125-1ubuntu0.1~24.04.2 [21.4 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpciaccess0 amd64 0.17-3ubuntu0.24.04.2 [18.9 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-intel1 amd64 2.4.125-1ubuntu0.1~24.04.2 [63.9 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm20 amd64 1:20.1.2-0ubuntu1~24.04.3 [30.6 MB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libx11-xcb1 amd64 2:1.8.7-1build1 [7,800 B]
+Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-dri3-0 amd64 1.15-1ubuntu2 [7,142 B]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-present0 amd64 1.15-1ubuntu2 [5,676 B]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-randr0 amd64 1.15-1ubuntu2 [17.9 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-sync1 amd64 1.15-1ubuntu2 [9,312 B]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-xfixes0 amd64 1.15-1ubuntu2 [10.2 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libxshmfence1 amd64 1.3-1build5 [4,764 B]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.2 [10.8 MB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.2 [34.2 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 libvulkan1 amd64 1.3.275.0-1build1 [142 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.2 [37.9 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-glx0 amd64 1.15-1ubuntu2 [24.8 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-shm0 amd64 1.15-1ubuntu2 [5,756 B]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 libxxf86vm1 amd64 1:1.1.4-1build4 [9,282 B]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.2 [110 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 libwayland-client0 amd64 1.22.0-2.1build1 [26.4 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-vulkan-drivers amd64 25.2.8-0ubuntu0.24.04.2 [17.5 MB]
+Get:24 http://archive.ubuntu.com/ubuntu noble/main amd64 libglvnd0 amd64 1.7.0-1build1 [69.6 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble/main amd64 libglx0 amd64 1.7.0-1build1 [38.6 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/main amd64 libgl1 amd64 1.7.0-1build1 [102 kB]
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-common all 2.4.125-1ubuntu0.1~24.04.2 [9,250 B]
+Fetched 59.7 MB in 1min 8s (882 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96487 files and directories currently installed.)
+Preparing to unpack .../00-libdrm-common_2.4.125-1ubuntu0.1~24.04.2_all.deb ...
+Unpacking libdrm-common (2.4.125-1ubuntu0.1~24.04.2) over (2.4.125-1ubuntu0.1~24.04.1) ...
+Preparing to unpack .../01-libdrm2_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.125-1ubuntu0.1~24.04.2) over (2.4.125-1ubuntu0.1~24.04.1) ...
+Selecting previously unselected package libdrm-amdgpu1:amd64.
+Preparing to unpack .../02-libdrm-amdgpu1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm-amdgpu1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../03-libpciaccess0_0.17-3ubuntu0.24.04.2_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../04-libdrm-intel1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Selecting previously unselected package libllvm20:amd64.
+Preparing to unpack .../05-libllvm20_1%3a20.1.2-0ubuntu1~24.04.3_amd64.deb ...
+Unpacking libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../06-libx11-xcb1_2%3a1.8.7-1build1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../07-libxcb-dri3-0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../08-libxcb-present0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-randr0:amd64.
+Preparing to unpack .../09-libxcb-randr0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../10-libxcb-sync1_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../11-libxcb-xfixes0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../12-libxshmfence1_1.3-1build5_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.3-1build5) ...
+Selecting previously unselected package mesa-libgallium:amd64.
+Preparing to unpack .../13-mesa-libgallium_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../14-libgbm1_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libvulkan1:amd64.
+Preparing to unpack .../15-libvulkan1_1.3.275.0-1build1_amd64.deb ...
+Unpacking libvulkan1:amd64 (1.3.275.0-1build1) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../16-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../17-libxcb-glx0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../18-libxcb-shm0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../19-libxxf86vm1_1%3a1.1.4-1build4_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Selecting previously unselected package libglx-mesa0:amd64.
+Preparing to unpack .../20-libglx-mesa0_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../21-libwayland-client0_1.22.0-2.1build1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Selecting previously unselected package mesa-vulkan-drivers:amd64.
+Preparing to unpack .../22-mesa-vulkan-drivers_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-vulkan-drivers:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libglvnd0:amd64.
+Preparing to unpack .../23-libglvnd0_1.7.0-1build1_amd64.deb ...
+Unpacking libglvnd0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libglx0:amd64.
+Preparing to unpack .../24-libglx0_1.7.0-1build1_amd64.deb ...
+Unpacking libglx0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libgl1:amd64.
+Preparing to unpack .../25-libgl1_1.7.0-1build1_amd64.deb ...
+Unpacking libgl1:amd64 (1.7.0-1build1) ...
+Setting up libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Setting up libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Setting up libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+Setting up libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Setting up libglvnd0:amd64 (1.7.0-1build1) ...
+Setting up libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Setting up libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Setting up libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Setting up libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Setting up libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Setting up libvulkan1:amd64 (1.3.275.0-1build1) ...
+Setting up libxshmfence1:amd64 (1.3-1build5) ...
+Setting up libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Setting up libdrm-common (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Setting up libdrm2:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up libdrm-amdgpu1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up mesa-vulkan-drivers:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libglx0:amd64 (1.7.0-1build1) ...
+Setting up libgl1:amd64 (1.7.0-1build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ systemctl restart falcon-sensor.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
++ /root/lfx-task1/ianvs-py37/bin/python -
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/root/lfx-task1/ianvs-py37/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+tensorflow 1.14.0
+cv2 3.4.18
+sedna import ok
+ianvs core import ok
